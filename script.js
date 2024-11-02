@@ -181,6 +181,79 @@ jsCheckoutBtn.addEventListener('click', function() {
     LearningSection.style.display = "flex";
 });
 
+// ADD EVENTS TO THE FOOTER MENU ITEMS
+// Get the Menu-Items
+let footerHomeBtn = document.getElementById("footer-home-btn");
+let footerAboutBtn = document.getElementById("footer-about-btn");
+let footerSkillsBtn = document.getElementById("footer-skills-btn");
+let footerPortfolioBtn = document.getElementById("footer-portfolio-btn");
+let footerBlogBtn = document.getElementById("footer-blog-btn");
+let footerLearningBtn = document.getElementById("footer-learning-btn");
+
+// Get All Sections
+
+let footerHomeCon = document.querySelector(".hero-container");
+let footerAboutCon = document.querySelector(".about-container");
+let footerSkillsCon = document.querySelector(".skills-container");
+let footerPortfolioCon = document.querySelector(".portfolio-section");
+let footerBlogCon = document.querySelector(".blog-section");
+let footerLearningCon = document.querySelector(".learning-section");
+
+// Add Events to the Footer Menu Items
+footerHomeBtn.addEventListener('click', function() {
+    footerHomeCon.style.display = "flex";
+    footerAboutCon.style.display = "none";
+    footerSkillsCon.style.display = "none";
+    footerPortfolioCon.style.display = "none";
+    footerBlogCon.style.display = "none";
+    footerLearningCon.style.display = "none";
+});
+
+footerAboutBtn.addEventListener('click', function() {
+    footerHomeCon.style.display = "none";
+    footerAboutCon.style.display = "flex";
+    footerSkillsCon.style.display = "none";
+    footerPortfolioCon.style.display = "none";
+    footerBlogCon.style.display = "none";
+    footerLearningCon.style.display = "none";
+});
+
+footerSkillsBtn.addEventListener('click', function() {
+    footerHomeCon.style.display = "none";
+    footerAboutCon.style.display = "none";
+    footerSkillsCon.style.display = "flex";
+    footerPortfolioCon.style.display = "none";
+    footerBlogCon.style.display = "none";
+    footerLearningCon.style.display = "none";
+});
+
+footerPortfolioBtn.addEventListener('click', function() {
+    footerHomeCon.style.display = "none";
+    footerAboutCon.style.display = "none";
+    footerSkillsCon.style.display = "none";
+    footerPortfolioCon.style.display = "flex";
+    footerBlogCon.style.display = "none";
+    footerLearningCon.style.display = "none";
+});
+
+footerBlogBtn.addEventListener('click', function() {
+    footerHomeCon.style.display = "none";
+    footerAboutCon.style.display = "none";
+    footerSkillsCon.style.display = "none";
+    footerPortfolioCon.style.display = "none";
+    footerBlogCon.style.display = "flex";
+    footerLearningCon.style.display = "none";
+});
+
+footerLearningBtn.addEventListener('click', function() {
+    footerHomeCon.style.display = "none";
+    footerAboutCon.style.display = "none";
+    footerSkillsCon.style.display = "none";
+    footerPortfolioCon.style.display = "none";
+    footerBlogCon.style.display = "none";
+    footerLearningCon.style.display = "flex";
+});
+
 // NAV-BAR Responsive Design
 
 // Get Burger Menu Icon
